@@ -6,11 +6,13 @@ import java.util.Set;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.Test;
 
 public class WindowsHandler {
 
 	
-		public static void main(String[] args) throws InterruptedException {
+		@Test
+		public void openBrowser() throws InterruptedException {
 
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Mahfuj Tuhin\\eclipse-workspace\\BatchMarch2020\\jars\\chromedriver_win32\\chromedriver.exe");
 			
