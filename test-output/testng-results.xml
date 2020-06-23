@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-14T23:29:29 EDT" name="Default suite" finished-at="2020-06-14T23:29:58 EDT" duration-ms="29054">
+  <suite started-at="2020-06-21T22:23:58 EDT" name="Default suite" finished-at="2020-06-21T22:24:15 EDT" duration-ms="16650">
     <groups>
     </groups>
-    <test started-at="2020-06-14T23:29:29 EDT" name="Default test" finished-at="2020-06-14T23:29:58 EDT" duration-ms="29054">
-      <class name="kl22020.WindowsHandler">
-        <test-method signature="openBrowser()[pri:0, instance:kl22020.WindowsHandler@1460a8c0]" started-at="2020-06-14T23:29:29 EDT" name="openBrowser" finished-at="2020-06-14T23:29:58 EDT" duration-ms="29005" status="PASS">
+    <test started-at="2020-06-21T22:23:58 EDT" name="Default test" finished-at="2020-06-21T22:24:15 EDT" duration-ms="16650">
+      <class name="kl22020.Config">
+        <test-method is-config="true" signature="openBrowser()[pri:0, instance:kl22020.Config@402e37bc]" started-at="2020-06-21T22:23:58 EDT" name="openBrowser" finished-at="2020-06-21T22:24:09 EDT" duration-ms="11372" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openBrowser -->
-      </class> <!-- kl22020.WindowsHandler -->
+        <test-method signature="signinFBTest()[pri:0, instance:kl22020.Config@402e37bc]" started-at="2020-06-21T22:24:10 EDT" name="signinFBTest" finished-at="2020-06-21T22:24:10 EDT" duration-ms="395" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signinFBTest -->
+        <test-method signature="signupFBTest()[pri:0, instance:kl22020.Config@402e37bc]" started-at="2020-06-21T22:24:10 EDT" name="signupFBTest" finished-at="2020-06-21T22:24:10 EDT" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupFBTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:kl22020.Config@402e37bc]" started-at="2020-06-21T22:24:10 EDT" name="closeBrowser" finished-at="2020-06-21T22:24:15 EDT" duration-ms="4321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- kl22020.Config -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
