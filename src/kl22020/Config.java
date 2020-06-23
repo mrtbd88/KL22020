@@ -3,7 +3,9 @@ package kl22020;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
@@ -39,12 +41,29 @@ public class Config extends WebDriverFunction {
 			
 	}
 	@Test
-	public void signupFBTest() {
+	public void signupFBTest() throws Exception {
 		System.out.println("Facebook signup test");
 		driver.findElement(By.xpath(fnameLoc)).sendKeys(fnameVal);
 		driver.findElement(By.xpath(lnameLoc)).sendKeys(lnameVal);
 		driver.findElement(By.xpath(emailLoc)).sendKeys(emailVal);
 		driver.findElement(By.xpath(passLoc)).sendKeys(passVal);
+		
+		Thread.sleep(3000);
+		WebElement web=driver.findElement(By.xpath("//*[@id=\"month\"]"));
+		WebElement webd=driver.findElement(By.xpath("//*[@id=\"day\"]"));
+		WebElement weby=driver.findElement(By.xpath("//*[@id=\"year\"]"));
+		
+		Select sel=new Select(web);
+		Select seld=new Select(webd);
+	    Select sely=new Select(weby);
+
+		sel.selectByVisibleText("Dec");
+		seld.selectByIndex(16);
+		sely.selectByValue("1971");
+		
+		driver.findElement(By.xpath("//*[@id=\"u_0_7\"]")).click();//click male button
+		driver.findElement(By.xpath("//*[@id=\"u_0_13\"]")).click();//click SIGNUP button
+
 		
 	}
 	@Test
